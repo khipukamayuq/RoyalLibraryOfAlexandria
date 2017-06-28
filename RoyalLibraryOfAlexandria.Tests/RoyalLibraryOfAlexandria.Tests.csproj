@@ -95,6 +95,10 @@
       <Project>{FC5FF33E-7D5D-4BB2-A7F4-283FB37F5C3C}</Project>
       <Name>RoyalLibraryOfAlexandria</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RoyalLibraryShared\RoyalLibraryShared.csproj">
+      <Project>{86c09ee0-501e-4774-8de7-e957f7cc63d3}</Project>
+      <Name>RoyalLibraryShared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
