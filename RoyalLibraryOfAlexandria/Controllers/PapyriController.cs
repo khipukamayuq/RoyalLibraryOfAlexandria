@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using RoyalLibraryOfAlexandria.Models;
-
+using RoyalLibraryOfAlexandria.Repositories;
 
 namespace RoyalLibraryOfAlexandria.Controllers
 {
@@ -24,12 +24,12 @@ namespace RoyalLibraryOfAlexandria.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View("Enroll");
+                return View("Create");
             }
 
-            papyrusRepository = new papyrusRepository();
+            papyrusRepository = new PapyrusRepository();
             papyrusRepository.Create(papyrus);
-            return RedirectToAction("Create");
+            return RedirectToAction("Index");
         }
 
         public ActionResult Edit()
