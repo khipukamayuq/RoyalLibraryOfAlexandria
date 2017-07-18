@@ -1,29 +1,18 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model RoyalLibraryOfAlexandria.Models.Papyrus[]
+
+
+@{
+    ViewBag.Title = "The Royal Library of Alexandria";
 }
 
-<div class="jumbotron">
-    <h1>The Royal Library of Alexandria</h1>
-    <p class="lead">Welcome to our legendary collection of lost antiquity.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<h2>@ViewBag.Title</h2>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Scour Our Athenaeum</h2>
-        <p>
-            
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Proffer New Manuscript</h2>
-        <p></p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Errata/Apocrypha</h2>
-        <p></p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+  
+   
+        <div class="col-md-3">
+            <h4></h4>
+            <p>@Html.ActionLink("Salvage Papyrus", "Create", "Papyri")</p>
+        </div>
+   
 </div>
