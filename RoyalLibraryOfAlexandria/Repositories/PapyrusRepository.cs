@@ -17,5 +17,16 @@ namespace RoyalLibraryOfAlexandria.Repositories
                 context.SaveChanges();
             }
         }
+
+        public List<Papyrus> GetAll()
+        {
+            List<Papyrus> papyri = new List<Papyrus>();
+            using (var context = new Context())
+            {
+                //papyri = context.Papyri.Include("Author").ToList();
+            }
+
+            return papyri;
+        }
     }
 }

@@ -29,7 +29,16 @@ namespace RoyalLibraryOfAlexandria.Controllers
 
             papyrusRepository = new PapyrusRepository();
             papyrusRepository.Create(papyrus);
-            return RedirectToAction("Index");
+            return RedirectToAction("Papyri");
+        }
+
+        [HttpGet]
+        public ActionResult Papyri()
+        {
+            papyrusRepository = new PapyrusRepository();
+            var papyri = papyrusRepository.GetAll();
+
+            return View(papyri);
         }
 
         public ActionResult Edit()

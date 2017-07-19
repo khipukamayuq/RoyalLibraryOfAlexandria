@@ -200,6 +200,7 @@
     <Content Include="Views\Papyri\Delete.cshtml" />
     <Content Include="Views\Papyri\Details.cshtml" />
     <Content Include="Views\Papyri\Edit.cshtml" />
+    <Content Include="Views\Papyri\Papyri.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

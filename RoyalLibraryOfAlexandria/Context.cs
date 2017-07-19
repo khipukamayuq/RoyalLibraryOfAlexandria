@@ -27,15 +27,18 @@ namespace RoyalLibraryOfAlexandria
         {
             context.Papyri.Add(new Papyrus()
             {
-                Title = "Furrby"
+                Title = "Margites",
+                Author = "Homer"
             });
             context.Papyri.Add(new Papyrus()
             {
-                Title = "NomNom"
+                Title = "On Sphere-Making",
+                Author = "Archimedes"
             });
             context.Papyri.Add(new Papyrus()
             {
-                Title = "Wagabond"
+                Title = "Hermocrates",
+                Author = "Plato"
             });
             base.Seed(context);
         }
