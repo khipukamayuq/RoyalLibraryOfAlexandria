@@ -7,7 +7,6 @@ using System.Web;
 
 namespace RoyalLibraryOfAlexandria
 {
-   // private static Papyri[] _papyri = new Papyri[]{};
 
     public class Context : DbContext
     {
@@ -19,9 +18,7 @@ namespace RoyalLibraryOfAlexandria
         public DbSet<Papyrus> Papyri { get; set; }
     }
 
-    public class MyInitializer :
-        DropCreateDatabaseIfModelChanges<Context>
-    //DropCreateDatabaseAlways<Context>
+    public class MyInitializer : DropCreateDatabaseIfModelChanges<Context>
     {
         protected override void Seed(Context context)
         {

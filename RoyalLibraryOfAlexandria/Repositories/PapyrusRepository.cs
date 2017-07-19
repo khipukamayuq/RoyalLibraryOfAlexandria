@@ -23,7 +23,7 @@ namespace RoyalLibraryOfAlexandria.Repositories
             List<Papyrus> papyri = new List<Papyrus>();
             using (var context = new Context())
             {
-                //papyri = context.Papyri.Include("Author").ToList();
+               papyri = context.Papyri.ToList();
             }
 
             return papyri;
