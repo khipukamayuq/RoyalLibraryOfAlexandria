@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - ePapyri</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -29,10 +29,13 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - A Burning for Knowledge, Inc.</p>
-        </footer>
+
+    </div>
+
+    <div class="container modal-footer navbar-fixed-bottom">
+       
+            <p class="pull-left">&copy; @DateTime.Now.Year - A Burning for Knowledge, Inc.</p>
+        
     </div>
 
     @Scripts.Render("~/bundles/jquery")
